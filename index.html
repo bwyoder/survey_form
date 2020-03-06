@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Home of Blessing Supporter Survey</h1>
+        <p id="description">Help us improve your experience!</p>
+        <form id="survey-form">
+
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="Name">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" id="number" placeholder="Age" min="0" max="100">
+
+            <select id="dropdown">
+                <option disabled selected value>Choose your sponsor status</option>
+                <option value="child">Child sponsor</option>
+                <option value="regular">Other regular supporter</option>
+                <option value="occasional">Occasional supporter</option>
+                <option value="one_time">One time supporter</option>
+            </select>
+
+            <input type="radio" id="sole" name="sponsoring_group_type" value="sole">
+            <label for="sole">I am a sole sponsor</label>
+            <input type="radio" id="church" name="sponsoring_group_type" value="church">
+            <label for="church">My church is a sponsoring church</label>
+            <input type="radio" id="other_group" name="sponsoring_group_type" value="other">
+            <label for="other_group">I am part of another sponsoring group</label>
+
+            <p>Enroll me in:</p>
+            <input type="checkbox" name="mail" value="email_newsletter" id="email_newsletter">
+            <label for="email_newsletter">Email newsletter</label>
+            <input type="checkbox" name="mail" value="mail_newsletter" id="mail_newsletter">
+            <label for="mail_newsletter">Mail newsletter</label>
+            <input type="checkbox" name="mail" value="email_special_updates" id="email_special_updates">
+            <label for="email_special_updates">Email special updates</label>
+            <input type="checkbox" name="mail" value="mail_special_updates" id="mail_special_updates">
+            <label for="mail_special_updates">Mail special updates</label>
+
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" cols="30" rows="10"placeholder="Enter comments here..."></textarea>
+
+            <input type="submit" id="submit">
+
+
+        </form>
+    </body>
+
+
+
+
+
+</html>
