@@ -11,15 +11,15 @@
 
                 <div class="form-group" id="info">
                     <label id="name-label" for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name" required>
+                    <input class="text-input" type="text" id="name" placeholder="Name" required>
                     <label id="email-label" for="email">Email</label>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <label id="number-label" for="number">Age (optional)</label>
-                    <input type="number" id="number" placeholder="Age" min="0" max="100">
+                    <input class="text-input" type="email" id="email" placeholder="Email" required>
+                    <label id="number-label" for="number">Age</label>
+                    <input class="text-input" type="number" id="number" placeholder="Age" min="0" max="100">
                 </div>
                 
                 <div class="form-group">
-                    <select id="dropdown">
+                    <select class="text-input" id="dropdown">
                         <option disabled selected value>Choose your sponsor status</option>
                         <option value="child">Child sponsor</option>
                         <option value="regular">Other regular supporter</option>
@@ -29,26 +29,26 @@
                 </div>
 
                 <div class="form-group" id="radio-buttons">
-                    <label for="sole"><input type="radio" id="sole" name="sponsoring_group_type" value="sole">I am a sole sponsor</label>
-                    <label for="church"><input type="radio" id="church" name="sponsoring_group_type" value="church">My church is a sponsoring church</label>
-                    <label for="other_group"><input type="radio" id="other_group" name="sponsoring_group_type" value="other">I am part of another sponsoring group</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="radio" name="sponsor-type" value="sole">I am a sole sponsor</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="radio" name="sponsor-type" value="church">My church is a sponsoring church</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="radio" name="sponsor-type" value="other">I am part of another sponsoring group</label>
                 </div>
 
                 <div class="form-group" id="communication">
                     <p>Enroll me in:</p>
-                    <label><input type="checkbox" value="email_newsletter">Email newsletter</label>
-                    <label><input type="checkbox" value="mail_newsletter">Mail newsletter</label>
-                    <label><input type="checkbox" value="email_special_updates">Email special updates</label>
-                    <label><input type="checkbox" value="mail_special_updates">Mail special updates</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="checkbox" name="communication" value="email_newsletter">Email newsletter</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="checkbox" name="communication" value="mail_newsletter">Mail newsletter</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="checkbox" name="communication" value="email_special_updates">Email special updates</label>
+                    <label class="hover-shadow"><input class="radio-checkbox" type="checkbox" name="communication" value="mail_special_updates">Mail special updates</label>
                 </div>
 
                 <div class="form-group" id="text-box">
                     <p>Any comments or suggestions?</p>
-                    <textarea id="comments" cols="30" rows="10"placeholder="Enter comments here..."></textarea>
+                    <textarea class="text-box" id="comments" cols="30" rows="5"placeholder="Enter comments here..."></textarea>
                 </div>
                   
                 <div class="form-group">
-                    <button type="submit" id="submit">Submit</button>
+                    <button class="submit-button" type="submit" id="submit">Submit</button>
                 </div>
 
             </form>
